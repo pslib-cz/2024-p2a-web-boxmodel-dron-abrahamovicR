@@ -38,5 +38,19 @@
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
    
+    /*.page__header {
+        background-image: url(/images/header-2560w.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        
+        height: 50em;
+    }
 
+    .page__intro {
+        color: white;
+    }
+
+    .button {
+        color: black
+    }*/
 }
