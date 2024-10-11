@@ -38,19 +38,46 @@
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
    
-    /*.page__header {
-        background-image: url(/images/header-2560w.jpg);
-        background-repeat: no-repeat;
-        background-position: top;
-        
-        height: 50em;
+    .image-responsive {
+        display: block;
+        width: 100%;
+    }
+
+    .page__header {
+        background-image: url(../images/header-2560w.webp);
+        background-size: cover;
+        background-position: center;
+        padding: 1em;
+    }
+
+    .page__logo {
+        display: inline-block;
+        padding: 1em;
+    }
+
+    .page__logo-container {
+        text-align: center;
     }
 
     .page__intro {
-        color: white;
+        color: var(--light, white);
     }
 
     .button {
-        color: black
-    }*/
+        display: inline-block;
+        background-color: var(--primary, teal);
+        padding: 1em 2em;
+        border-radius: 0.5em;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    button:hover {
+
+    }
+
+    .button--light {
+        background-color: var(--light, white);
+        color: var(--black, black);
+    }
 }
