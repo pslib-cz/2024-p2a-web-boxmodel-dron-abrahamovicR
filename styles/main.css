@@ -46,8 +46,9 @@
     .page__header {
         background-image: url(../images/header-2560w.webp);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         padding: 1em;
+        height: 30em;
     }
 
     .page__logo {
@@ -61,6 +62,14 @@
 
     .page__intro {
         color: var(--light, white);
+        padding-left: 5em;
+        padding-top: 10em;
+        margin-right: 40em;
+    }
+
+    .page__section {
+        margin-left: 20em;
+        margin-right: 20em;
     }
 
     .button {
@@ -72,8 +81,10 @@
         text-decoration: none;
     }
 
-    button:hover {
-
+    .button--light:hover {
+        background-color: var(--black, black);
+        color: var(--light, white);
+        text-decoration: underline;
     }
 
     .button--light {
