@@ -26,7 +26,7 @@
         background-repeat: no-repeat;
         */
         background-image: url("../images/logo.svg");
-        width: 2em;
+        width: auto;
         height: 1em;
         font-size: 1.5em;
     }
@@ -52,8 +52,11 @@
     }
 
     .page__logo {
-        display: inline-block;
+        display: block;
         padding: 1em;
+        height: 2em;
+        aspect-ratio: 42 / 24;
+        margin: 0 auto;
     }
 
     .page__logo-container {
@@ -67,9 +70,41 @@
         margin-right: 40em;
     }
 
+    .page_content {
+        padding: 1em;
+    }
+
+    .picture-box {
+        margin: 0;
+    }
+
+    .picture-box__caption {
+        font-size: 0.8em;
+        color: var(--gray, gray);
+        text-align: center;
+        margin-top: 0.75em;
+        padding-bottom: 2em;
+    }
+
     .page__section {
         margin-left: 20em;
         margin-right: 20em;
+    }
+
+    .text-h3 {
+        font-size: 1.125em;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+
+    .outline-box {
+        border: 4px solid var(--primary, cyan);
+        padding: 1em;
+
+    }
+
+    .list > li::marker {
+        color: var(--primary, cyan);
     }
 
     .button {
@@ -80,15 +115,20 @@
         font-weight: 700;
         text-decoration: none;
     }
-
-    .button--light:hover {
-        background-color: var(--black, black);
-        color: var(--light, white);
-        text-decoration: underline;
-    }
-
+    
     .button--light {
         background-color: var(--light, white);
         color: var(--black, black);
+    }
+
+    .button:hover {
+        background-color: var(--black, black);
+        color: var(--light, white);
+        text-decoration: underline;
+        text-decoration-thickness: 0.05em;
+    }
+
+    .product {
+        
     }
 }
