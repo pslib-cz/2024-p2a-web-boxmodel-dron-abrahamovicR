@@ -117,7 +117,7 @@
         border-radius: 0.5em;
         font-weight: 700;
         text-decoration: none;
-        color: var(--black, black)
+        color: var(--light, white)
     }
 
     .button--light {
@@ -145,14 +145,46 @@
         padding: 2.5em;
     }
 
-    .text-h1--smaller {
+    .text-p--weighted {
+        font-weight: 700;
+    }
+
+    .text-h1--bigger {
         font-size: 2em;
 
     }
 
-    .text-h3--bigger {
+    .text-h3--smaller {
         font-size: 3em;
         margin: 0em;
+        font-weight: 700;
     }
 
+    .page__footer {
+        text-align: center;
+        background-color: var(--gray, gray);
+        color: var(--light, white);
+        height: 5em;
+    }
+
+    .gallery {
+        --indent: 0.5em;
+        margin: var(--indent);
+    }
+
+    .gallery-item {
+        display: block;
+        margin: var(--indent);   
+    }
+    
+    @media (min-width: 768px) {
+        .gallery-item {
+            width: calc(50% - 2 * var(--indent));
+            display: inline-block;
+        }
+
+        .gallery-item-100w {
+            width: calc(100% - 2 * var(--indent));
+        }
+    }
 }
